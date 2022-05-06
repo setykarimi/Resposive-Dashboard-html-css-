@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    height: 100%;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    grid-auto-rows: minmax(3em, auto);
+    // height: 100%;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    // height: 3em;
+}
+
+main{
+    grid-row: 2/2;
+    grid-column: 2/11;
+    align-self:flex-start;
+}
