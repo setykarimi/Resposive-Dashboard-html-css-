@@ -42,6 +42,14 @@ body {
       grid-template-columns: 14rem auto 23rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 94%;
+    -ms-grid-columns: 7rem auto 23rem;
+        grid-template-columns: 7rem auto 23rem;
+  }
+}
+
 a {
   color: #363949;
 }
@@ -129,6 +137,12 @@ aside .top {
   margin-top: 1.4rem;
 }
 
+@media screen and (max-width: 1200px) {
+  aside .top {
+    background: transparent;
+  }
+}
+
 aside .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +153,12 @@ aside .logo {
 aside .logo img {
   width: 2rem;
   height: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  aside .logo h2 {
+    display: none;
+  }
 }
 
 aside .close {
@@ -170,8 +190,14 @@ aside .sidebar a {
           align-items: center;
   position: relative;
   height: 3.7rem;
-  -webkit-transition: all 0.3s eas;
-  transition: all 0.3s eas;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  aside .sidebar a {
+    width: 5.6rem;
+  }
 }
 
 aside .sidebar a:hover {
@@ -192,6 +218,13 @@ aside .sidebar a:last-child {
   position: absolute;
   bottom: 2rem;
   width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  aside .sidebar a:last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
 }
 
 aside .sidebar a.active {
@@ -224,6 +257,12 @@ aside h3 {
   font-weight: 500;
 }
 
+@media screen and (max-width: 1200px) {
+  aside h3 {
+    display: none;
+  }
+}
+
 main {
   margin-top: 1.4rem;
 }
@@ -248,6 +287,14 @@ main .insights {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  main .insights {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 main .insights > div {
@@ -364,8 +411,19 @@ main .recent-orders {
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 1200px) {
+  main .recent-orders {
+    width: 94%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 2rem 0 0 8.8rem;
+  }
+}
+
 main .recent-orders h2 {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 main .recent-orders table {
@@ -376,8 +434,14 @@ main .recent-orders table {
   text-align: center;
   -webkit-box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
           box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  main .recent-orders table {
+    width: 79vw;
+  }
 }
 
 main .recent-orders table:hover {
@@ -385,10 +449,34 @@ main .recent-orders table:hover {
           box-shadow: none;
 }
 
+@media screen and (max-width: 1200px) {
+  main .recent-orders table thead tr th:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .recent-orders table thead tr th:first-child {
+    display: none;
+  }
+}
+
 main .recent-orders table tbody td {
   height: 2.8rem;
   border-bottom: 1px solid rgba(132, 139, 200, 0.18);
   color: #677483;
+}
+
+@media screen and (max-width: 1200px) {
+  main .recent-orders table tbody td:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .recent-orders table tbody td:first-child {
+    display: none;
+  }
 }
 
 main .recent-orders table tbody tr:last-child td {
@@ -400,5 +488,196 @@ main .recent-orders a {
   display: block;
   margin: 1rem auto;
   color: #7380ec;
+}
+
+.right {
+  margin-top: 1.4rem;
+}
+
+.right .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 2rem;
+}
+
+.right .top button {
+  display: none;
+}
+
+.right .top .theme-toggler {
+  background-color: rgba(132, 139, 200, 0.18);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+.right .top .theme-toggler span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right .top .theme-toggler span.active {
+  background: #7380ec;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.right .top .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  text-align: right;
+}
+
+.right .recent-updates {
+  margin-top: 1rem;
+}
+
+.right .recent-updates h2 {
+  margin-bottom: 0.8rem;
+}
+
+.right .recent-updates .updates {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+          box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.right .recent-updates .updates:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.right .recent-updates .updates .update {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.6rem auto;
+      grid-template-columns: 2.6rem auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.right .sales-analytics h2 {
+  margin-bottom: 0.8rem;
+}
+
+.right .sales-analytics .item {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1.4rem 1.8rem;
+  border-radius: 1.2rem;
+  -webkit-box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+          box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.right .sales-analytics .item:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.right .sales-analytics .item .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 0;
+  width: 100%;
+}
+
+.right .sales-analytics .item .icon {
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 50%;
+  background: #7380ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right .sales-analytics .item.offline .icon {
+  background: #ff7782;
+}
+
+.right .sales-analytics .item.person .icon {
+  background: #41f1b6;
+}
+
+.right .sales-analytics .add-product {
+  background: transparent;
+  border: 2px dashed #7380ec;
+  color: #7380ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.right .sales-analytics .add-product:hover {
+  background-color: #7380ec;
+  color: #fff;
+}
+
+.right .sales-analytics .add-product div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6rem;
+}
+
+.right .sales-analytics .add-product div h3 {
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
