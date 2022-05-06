@@ -1,38 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body, html {
-  height: 100%;
-}
-
-.grid-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 11fr;
-      grid-template-columns: 1fr 11fr;
-  grid-auto-rows: minmax(3em, auto);
-}
-
-nav {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main {
-  -ms-grid-row: 2;
-  grid-row: 2/2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 9;
-  grid-column: 2/11;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+a {
+  color: #7380ec;
 }
 /*# sourceMappingURL=style.css.map */
