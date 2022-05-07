@@ -58,6 +58,15 @@
 	 gap: 1.8rem;
 	 grid-template-columns: 14rem auto 23rem;
 }
+
+@media screen and (max-width: 1400px) {
+	/* .container {
+		width: 96%;
+		grid-template-columns: 13rem auto 24rem;
+   } */
+}
+
+
  @media screen and (max-width: 1200px) {
 	 .container {
 		 width: 94%;
@@ -232,6 +241,14 @@
 	 bottom: 2rem;
 	 width: 100%;
 }
+
+@media screen and (max-width: 1400px) {
+	aside .sidebar a:last-child {
+		position: relative;
+		margin-top: 1.8rem;
+   }
+}
+
  @media screen and (max-width: 1200px) {
 	 aside .sidebar a:last-child {
 		 position: relative;
@@ -306,6 +323,14 @@
 	 grid-template-columns: repeat(3, 1fr);
 	 gap: 1.6rem;
 }
+
+@media screen and (max-width: 1400px) {
+	main .insights {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+   }
+}
+
  @media screen and (max-width: 1200px) {
 	 main .insights {
 		 grid-template-columns: 1fr;
@@ -320,6 +345,13 @@
 	 box-shadow: var(--color-box-shadow);
 	 transition: all 0.3s;
 }
+
+@media screen and (max-width : 1400px) {
+	main .insights > div {
+		padding: 1rem;
+	}
+}
+
  main .insights > div:hover {
 	 box-shadow: none;
 }
@@ -374,6 +406,8 @@
 	 transform: translate(5px, 5px);
 	 stroke-dasharray: 110;
 	 stroke-dashoffset: 92;
+	 width: 4em;
+	 height: 4em;
 }
  main .insights .sales svg circle {
 	 stroke-dashoffset: -30;
