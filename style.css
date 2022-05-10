@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@500&display=swap");
- * {
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+* {
 	 margin: 0;
 	 padding: 0;
 	 outline: 0;
@@ -10,17 +10,18 @@
 	 box-sizing: border-box;
 }
  html {
-	 font: 14px;
+	 font: 16px;
 }
  body {
 	 width: 100vw;
 	 height: 100vh;
-	 font-family: poppins, sans-serif;
+	 font-family: Lalezar, sans-serif;
 	 font-size: 0.88rem;
 	 background-color: var(--color-background);
 	 user-select: none;
 	 overflow-x: hidden;
 	 color: var(--color-dark);
+	 direction: rtl;
 }
  :root {
 	 --color-primary: #7380ec;
@@ -94,7 +95,7 @@
 	 font-size: 1.4rem;
 }
  h3 {
-	 font-size: 0.87rem;
+	 font-size: .94rem;
 }
  h4 {
 	 font-size: 0.8rem;
