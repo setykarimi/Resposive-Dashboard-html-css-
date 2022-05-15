@@ -398,6 +398,8 @@
  main .insights svg {
 	 width: 7rem;
 	 height: 7rem;
+	 position: absolute;
+	 left: .2em;
 }
  main .insights svg circle {
 	 fill: none;
