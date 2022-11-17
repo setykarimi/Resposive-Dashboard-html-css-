@@ -64,14 +64,9 @@ body {
 	margin: 0 auto;
 	gap: 1.8rem;
 	grid-template-columns: 14rem auto 23rem;
+	position: relative;
 }
 
-@media screen and (max-width: 1400px) {
-	/* .container {
-		width: 96%;
-		grid-template-columns: 13rem auto 24rem;
-   } */
-}
 
 
 @media screen and (max-width: 1200px) {
@@ -164,13 +159,13 @@ aside {
 @media screen and (max-width: 768px) {
 	aside {
 		position: fixed;
-		left: -100%;
+		right: -100%;
 		background: var(--color-white);
 		width: 18rem;
 		z-index: 3;
 		box-shadow: 1rem 3rem 4rem var(--color-light);
 		height: 100vh;
-		padding-right: var(--color-card-padding);
+		padding: .5rem var(--color-card-padding);
 		display: none;
 		animation: showMenu 400ms ease forwards;
 	}
@@ -178,7 +173,7 @@ aside {
 
 @keyframes showMenu {
 	to {
-		left: 0;
+		right: 0;
 	}
 }
 
@@ -507,9 +502,9 @@ main .recent-orders {
 	main .recent-orders {
 		width: 94%;
 		position: absolute;
-		left: 50%;
-		transform: translateX(-50%);
-		margin: 2rem 0 0 8.8rem;
+		left: 0;
+		right: 0;
+		margin: 6rem auto;
 	}
 }
 
@@ -632,7 +627,7 @@ main .recent-orders a {
 	cursor: pointer;
 	color: var(--color-dark);
 	position: absolute;
-	left: 1rem;
+	right: 1rem;
 }
 
 @media screen and (max-width: 768px) {
